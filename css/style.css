@@ -15,6 +15,7 @@ html {
   --accent-color: #2196f3;
   --border-color: #eeeeee;
   --border-color-secondary: #ececec;
+  --third-color: #afb1b8;
 
   --secondary-color: #ffffff;
   --secondary-shade-color: #f5f4fa;
@@ -27,7 +28,8 @@ h2,
 h3,
 h4,
 p,
-ul {
+ul,
+svg {
   margin: 0;
   padding: 0;
 }
@@ -114,6 +116,29 @@ body {
   list-style: none;
   color: var(--primary-shade2-color);
 }
+.primary-contact:nth-child(1)::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url(../icons/envelope.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  align-items: center;
+  outline: 1px dotted red;
+}
+.primary-contact:nth-child(2)::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url(../icons/smartphone.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  outline: 1px dotted red;
+}
 .primary-contact-item:not(:first-child) {
   margin-left: 50px;
 }
@@ -191,6 +216,73 @@ img {
 .base-skills {
   padding-bottom: 47px;
 }
+.skills-list {
+  display: flex;
+}
+.skills-item:not(:last-child) {
+  margin-right: 30px;
+}
+.skills-item-icon {
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: var(--secondary-shade-color);
+}
+
+/*.skills-title:nth-child(1)::before {
+  content: "";
+  display: inline-block;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../icons/antenna.svg);
+  background-color: var(--secondary-shade-color);
+  padding: 10px;
+  outline: 1px solid red;
+}
+.skills-title:nth-child(2)::before {
+  content: "";
+  display: block;
+  border-radius: 4px;
+  height: 120px;
+  padding: 25px;
+  margin-bottom: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../icons/clock.svg);
+  background-color: var(--secondary-shade-color);
+}
+.skills-title:nth-child(3)::before {
+  content: "";
+  display: block;
+  border-radius: 4px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../icons/diagram.svg);
+  background-color: var(--secondary-shade-color);
+}
+.skills-title:nth-child(4)::before {
+  content: "";
+  display: block;
+  border-radius: 4px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../icons/astronaut.svg);
+  background-color: var(--secondary-shade-color);
+}*/
 .skills-title {
   font-weight: bold;
   font-size: 14px;
@@ -199,22 +291,16 @@ img {
   text-transform: uppercase;
   color: var(--primary-color);
 }
+.skills-subtitle-wrap {
+  width: 270px;
+  margin-top: 10px;
+}
 .skills-subtitle {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-shade2-color);
-}
-.skills-subtitle-wrap {
-  width: 270px;
-  margin-top: 10px;
-}
-.skills-list {
-  display: flex;
-}
-.skills-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .section-title {
@@ -268,6 +354,58 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.team-social-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.social-link {
+  height: 44px;
+  padding: 16px 32px 30px;
+}
+.team-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+.team-social-link {
+  padding: 10px 12px 8px;
+  border-radius: 50%;
+  /*outline: 1px dashed palevioletred;*/
+}
+.team-social-icon {
+  fill: #afb1b8;
+}
+.team-social-icon:hover,
+.team-social-link:hover {
+  fill: #f5f4fa;
+  background-color: var(--accent-color);
+}
+
+/*==== C L I E N T S ====*/
+
+.clients {
+  padding: 94px 0;
+}
+.client-list {
+  display: flex;
+  justify-content: center;
+}
+.client-list > li {
+  border: 1px solid var(--third-color);
+  border-radius: 4px;
+}
+.client-item {
+  width: 170px;
+  padding: 16px 32px;
+}
+.client-item:not(:last-child) {
+  margin-right: 30px;
+}
+.wrap-icon {
+  padding: 16px 32px;
+}
+.client-icon {
+  margin: 0 auto;
 }
 
 /*******П О Р Т Ф О Л И О***********/
