@@ -396,13 +396,11 @@ img {
 }
 .client-item {
   width: 170px;
+  height: 92px;
   padding: 16px 32px;
 }
 .client-item:not(:last-child) {
   margin-right: 30px;
-}
-.wrap-icon {
-  padding: 16px 32px;
 }
 .client-icon {
   margin: 0 auto;
