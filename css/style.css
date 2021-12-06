@@ -231,59 +231,6 @@ img {
   border-radius: 4px;
   background-color: var(--secondary-shade-color);
 }
-
-/*.skills-title:nth-child(1)::before {
-  content: "";
-  display: inline-block;
-  width: 270px;
-  height: 120px;
-  border-radius: 4px;
-  margin-bottom: 30px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(../icons/antenna.svg);
-  background-color: var(--secondary-shade-color);
-  padding: 10px;
-  outline: 1px solid red;
-}
-.skills-title:nth-child(2)::before {
-  content: "";
-  display: block;
-  border-radius: 4px;
-  height: 120px;
-  padding: 25px;
-  margin-bottom: 30px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(../icons/clock.svg);
-  background-color: var(--secondary-shade-color);
-}
-.skills-title:nth-child(3)::before {
-  content: "";
-  display: block;
-  border-radius: 4px;
-  height: 120px;
-  margin-bottom: 30px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(../icons/diagram.svg);
-  background-color: var(--secondary-shade-color);
-}
-.skills-title:nth-child(4)::before {
-  content: "";
-  display: block;
-  border-radius: 4px;
-  height: 120px;
-  margin-bottom: 30px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(../icons/astronaut.svg);
-  background-color: var(--secondary-shade-color);
-}*/
 .skills-title {
   font-weight: bold;
   font-size: 14px;
@@ -534,7 +481,6 @@ img {
 .join-us {
   width: 206px;
   margin-left: 70px;
-  outline: 1px solid red;
 }
 .join-us-list {
   display: flex;
