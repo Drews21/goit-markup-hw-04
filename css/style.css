@@ -41,7 +41,7 @@ body {
   font-family: Roboto;
   font-style: normal;
   margin: 0;
-  width: 1600px;
+  /*width: 1600px;*/
 }
 
 .header {
@@ -114,38 +114,20 @@ body {
 
 .contact-list {
   display: flex;
+  align-items: center;
   margin-left: auto;
   list-style: none;
   color: var(--primary-shade2-color);
-}
-.primary-contact-link::before {
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  margin-right: 10px;
-  background-image: url(../icons/envelope.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  align-items: center;
-}
-.primary-contact-link:nth-child(2)::before {
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  margin-right: 10px;
-  background-image: url(../icons/smartphone.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  outline: 1px dotted red;
 }
 .primary-contact-item:not(:first-child) {
   margin-left: 50px;
 }
 
 .primary-contact-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -156,6 +138,10 @@ body {
 .primary-contact-link:focus {
   color: var(--accent-color);
   cursor: pointer;
+}
+.primary-contact-icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 /*******-------STUDIO-----***********/
@@ -189,7 +175,8 @@ img {
 }
 .overlay {
   max-width: 1600px;
-  max-height: 600px;
+  /*max-height: 600px;*/
+  margin: 0 auto;
   background-size: cover;
   background-image: linear-gradient(
       to right,
